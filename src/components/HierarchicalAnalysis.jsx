@@ -1811,10 +1811,10 @@ function HierarchicalAnalysis() {
               pages: "3-6",
               content: "Drug trafficking operation using maritime routes",
               images: [
-                "/public/images/CS1_1.png",
-                "/public/images/CS1_2.png",
-                "/public/images/CS1_3.png",
-                "/public/images/CS1_4.png"
+                "/images/CS1_1.png",
+                "/images/CS1_2.png",
+                "/images/CS1_3.png",
+                "/images/CS1_4.png"
               ],
               children: [
                 {
@@ -1836,8 +1836,8 @@ function HierarchicalAnalysis() {
               pages: "8-10",
               content: "Equipment smuggling operation for migration",
               images: [
-                "/public/images/CS2_1.png",
-                "/public/images/CS2_2.png"
+                "/images/CS2_1.png",
+                "/images/CS2_2.png"
               ],
               children: [
                 {
@@ -1855,7 +1855,7 @@ function HierarchicalAnalysis() {
               pages: "11",
               content: "Captagon smuggling operation",
               images: [
-                "/public/images/CS3_1.png"
+                "/images/CS3_1.png"
               ],
               children: [
                 {
@@ -1882,15 +1882,15 @@ function HierarchicalAnalysis() {
               label: "Network Integration",
               content: "Criminal networks from Syria, Kurdistan, and Tunisia demonstrate sophisticated operational integration, linking suppliers, transporters, and distributors across multiple countries while showing advanced market awareness through price competition and shared infrastructure.",
               images: [
-                "/public/images/network1.png",
-                "/public/images/network2.png"
+                "/images/network1.png",
+                "/images/network2.png"
               ]
             },
             {
               label: "Infrastructure",
               content: "Maritime routes (particularly 1km offshore patterns), port facilities, front businesses, and distribution networks are systematically shared across different criminal organizations, with regular device-tracked patterns showing coordinated use of these shared resources for both drug trafficking and human smuggling operations.",
               images: [
-                "/public/images/routes.png"
+                "/images/routes.png"
               ]
             }
           ]
@@ -1900,7 +1900,7 @@ function HierarchicalAnalysis() {
           pages: "10",
           // Show the steps image *above* Data Collection & Analysis Needs
           images: [
-            "/public/images/steps.png"
+            "/images/steps.png"
           ],
           children: [
             {
