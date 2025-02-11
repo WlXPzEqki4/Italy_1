@@ -2,7 +2,12 @@
 // HierarchicalAnalysis.jsx
 import React, { useState } from 'react';
 import { ChevronDown, ChevronRight, FileText } from 'lucide-react';
-import FooterBox from './FooterBox'; // Assuming both files are in the same folder
+// import FooterBox from './FooterBox'; 
+import FooterBox_2 from './FooterBox_2'; 
+import NetworkGraph from './NetworkGraph'; 
+import PersonsOfInterestTable from './PersonsOfInterestTable'; 
+
+
 
 // Reusable TreeNode component
 const TreeNode = ({ label, children, pages, content, images, defaultOpen }) => {
@@ -91,7 +96,7 @@ function HierarchicalAnalysis() {
         {
           label: "Summary Overview",
           content:
-            "Intelligence analysis reveals sophisticated criminal networks exploiting Italian maritime borders through coordinated operations spanning the Mediterranean region. The investigation, drawing from over 500 intelligence reports, documents three interconnected case studies that demonstrate how drug trafficking, human smuggling, and equipment smuggling operations share infrastructure and methods. Device tracking and pattern analysis expose regular maritime transfers occurring 1km offshore, while business records and social media investigation reveal legitimate enterprises serving as criminal fronts. The criminal ecosystem, represented by Syrian, Kurdish, and Tunisian operations, shows evolution beyond traditional ethnic boundaries, with sophisticated price competition and resource sharing. These cases, representing less than 0.4% of total intelligence, suggest a vastly larger criminal infrastructure threatening Italian national security."
+            "Intelligence analysis reveals sophisticated criminal networks exploiting Italian maritime borders through coordinated operations spanning the Mediterranean region. The investigation documents three interconnected case studies that demonstrate how drug trafficking, human smuggling, and equipment smuggling operations share infrastructure and methods. Device tracking and pattern analysis expose regular maritime transfers occurring 1km offshore, while business records and social media investigation reveal legitimate enterprises serving as criminal fronts. The criminal ecosystem, represented by Syrian, Kurdish, and Tunisian operations, shows evolution beyond traditional ethnic boundaries, with sophisticated price competition and resource sharing."
         },
         {
           label: "Key Points",
@@ -115,11 +120,6 @@ function HierarchicalAnalysis() {
               label: "Operational Patterns",
               content:
                 "Pattern-of-life analysis reveals regular 30-day operational cycles in maritime activities, with organised transfers occurring predominantly in early morning hours at small ports along the Italian coast."
-            },
-            {
-              label: "Scale Implications",
-              content:
-                "The three documented case studies represent less than 0.4% of over 500 intelligence reports, indicating a vastly larger criminal ecosystem exploiting Italian maritime borders for multiple illegal enterprises."
             }
           ]
         }
@@ -138,11 +138,6 @@ function HierarchicalAnalysis() {
               content:
                 "Three detailed case studies from September 2024, examining Syrian, Kurdish, and Tunisian criminal operations using maritime routes into Italy via Rome, Genoa, and Palermo.",
               children: [
-                {
-                  label: "Intelligence Volume",
-                  content:
-                    "Part of over 500 intelligence reports, with these cases representing <0.4% of total reporting"
-                },
                 {
                   label: "Verification",
                   content:
@@ -251,10 +246,6 @@ function HierarchicalAnalysis() {
           pages: "12",
           children: [
             {
-              label: "Scale",
-              content: "Cases represent <0.4% of over 500 intelligence reports"
-            },
-            {
               label: "Network Integration",
               content:
                 "Sophisticated cooperation between ethnic groups, shared infrastructure"
@@ -340,11 +331,6 @@ function HierarchicalAnalysis() {
               label: "Criminal Evolution",
               content:
                 "Networks breaking traditional ethnic/national boundaries, demonstrated through Syrian/Kurdish/Tunisian cooperation and sophisticated business front operations. Price competition and operational adaptation show market sophistication."
-            },
-            {
-              label: "Scale Analysis",
-              content:
-                "Cases represent <0.4% of over 500 intelligence reports, indicating vastly larger criminal ecosystem operating across multiple geographic areas with sophisticated coordination."
             }
           ]
         },
@@ -480,8 +466,7 @@ function HierarchicalAnalysis() {
             <p className="text-xl text-gray-700">
               Intelligence analysis reveals sophisticated criminal networks exploiting
               Italian maritime borders through coordinated operations spanning the
-              Mediterranean region. The investigation, drawing from over 500 intelligence
-              reports, documents three interconnected case studies that demonstrate how
+              Mediterranean region. The investigation documents three interconnected case studies that demonstrate how
               drug trafficking, human smuggling, and equipment smuggling operations share
               infrastructure and methods. Device tracking and pattern analysis expose
               regular maritime transfers occurring 1km offshore, while business records
@@ -538,11 +523,16 @@ function HierarchicalAnalysis() {
           <TreeNode key={index} {...section} />
         ))}
 
+        
+        <FooterBox_2 />
 
-        <FooterBox />
+
+        <NetworkGraph />
 
 
+        <PersonsOfInterestTable />
 
+      
 
 
       </div>
